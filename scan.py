@@ -27,5 +27,5 @@ def write_to_txt(filename="pump_simm/result.txt", host="127.0.0.1", start=1, end
 
 
 if __name__ == "__main__":
-    write_to_txt(filename="result.txt", host="127.0.0.1", start=1, end=1024)
+    write_to_txt(filename="pump_simm/result.txt", host="127.0.0.1", start=1, end=1024)
 
