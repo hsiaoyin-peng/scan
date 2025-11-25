@@ -15,7 +15,7 @@ def scan_ports(host="127.0.0.1", start=1, end=1024):
     return open_ports
 
 
-def write_to_txt(filename="pump_simm/result.log", host="127.0.0.1", start=1, end=1024):
+def write_to_txt(filename="pump_simm/.result.log", host="127.0.0.1", start=1, end=1024):
     open_ports = scan_ports(host, start, end)
 
     with open(filename, "w") as f:
@@ -27,4 +27,4 @@ def write_to_txt(filename="pump_simm/result.log", host="127.0.0.1", start=1, end
 
 
 if __name__ == "__main__":
-    write_to_txt(filename="pump_simm/result.log", host="127.0.0.1", start=1, end=1024)
+    write_to_txt(filename="pump_simm/.result.log", host="127.0.0.1", start=1, end=1024)
